@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.container1 {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.testimonial-h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.testimonial-h4 {
+  font-weight: 500;
+  font-style: italic;
+}
+.testimonial-para {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #818992;
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+  background: none;
+  color: #b3aeae;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 300px;
+}
+.carousel-inner {
+  margin-top: 50px;
+  margin-left: -100px;
+}
+#quote-carousel .carousel-indicators {
+  position: relative;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: -15px;
+  margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: 1px solid #0b0a0b;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
+  vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+  width: 188px;
+  height: 188px;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: "poppins";
+  float: left;
+  margin-right: 10px;
+}
+.social a {
+  color: #000;
+}
+.social i:hover,
+i:active {
+  color: #707070;
+}
+.social i::after {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  * {
+    max-width: 100%;
+  }
+  #quote-carousel .carousel-control {
+    display: none;
+  }
+  .container1 {
+    padding-top: 70px;
+  }
+  .carousel-inner {
+    margin-left: 20px;
+  }
+  /* #quote-carousel .carousel-indicators li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #quote-carousel .carousel-indicators .active {
+    width: 200%;
+    height: 200%;
+  } */
+}
+@media (max-width: 992px) {
+  #quote-carousel .carousel-control {
+    display: none;
+  }
+  .container1 {
+    padding-top: 70px;
+  }
+}
